@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="108dp"
+        android:text="Select Difficulty Level"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Elementary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableBottom="@drawable/ic_sentiment_very_satisfied_black_24dp"
+        android:text="DUMMY AI"
+        android:onClick="DifficultLevelClick"
+        android:textColorHighlight="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Advanced"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Elementary"
+        android:layout_alignStart="@+id/Elementary"
+        android:layout_below="@+id/Elementary"
+        android:layout_marginTop="48dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableBottom="@drawable/ic_mood_bad_black_24dp"
+        android:onClick="DifficultLevelClick"
+        android:text="SMART AI"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</RelativeLayout>

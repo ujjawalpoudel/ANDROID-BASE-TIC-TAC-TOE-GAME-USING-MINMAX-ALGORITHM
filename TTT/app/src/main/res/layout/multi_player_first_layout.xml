@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <EditText
+        android:id="@+id/Player1Multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter name of player 1 "
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/Player2Multi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Player1Multi"
+        android:layout_alignRight="@+id/Player1Multi"
+        android:layout_below="@+id/Player1Multi"
+        android:layout_marginTop="51dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter name of player 2 "
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/StartMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Player2Multi"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableBottom="@drawable/ic_arrow_forward_black_24dp"
+        android:onClick="StartMultiClick"
+        android:text="START"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+</RelativeLayout>
